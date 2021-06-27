@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:0px;
+            height: wrap-content;
+            width: 255px;
+            background-color: whitesmoke;
+        }
+        section{
+            padding:10px;
+            margin-bottom: 5px;
+        }
+        .hero-area{
+            color: black;
+            text-align: center;
+            font-size: 10px;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        .button{
+            justify-content: center;
+            width: 50%;
+            height: wrap-content;
+            margin: auto;
+            padding:10px;
+            display: flex;
+            background-color: #78A3DE;
+            color:white;
+            font-weight: 200;
+            cursor: pointer;
+            border:none;
+        }
+
+        .button:hover{
+            background-color:#78a3de91;
+        }
+
+        .pom-area-info-timer{
+            text-align: center;
+            font-size: 20px;
+        }
+        .pom-area-info-status{
+            text-align: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id = 'greeting-write' class = 'hero-area'>
+    </section>
+    <section class = 'pom-area'>
+        <button id = "start_pom" class = "button pom-area-start-button">Start Pomodoro</button>
+        <div class = 'pom-area-info'>
+            <div class = "pom-area-info-timer">
+                <h1 id = countdown-timer>25:00</h1>
+            </div>
+            <div class = "pom-area-info-status">
+                STUDY TIME!
+            </div>
+        </div>
+    </section>
+    <section class = 'save-session'>
+        <button id = "save_session_button" class = "button save-seassion-button">Save Tabs</button>
+    </section>
+    <section class = 'settings'>
+        <button id = "start_settings" class = "button settings-button">Settings</button>
+    </section>
+    <script src = "./popup_script.js"></script>
+
+    <div id="countdownExample">
+        <div class="values"></div>
+    </div>
+</body>
+</html>

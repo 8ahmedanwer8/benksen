@@ -1,0 +1,37 @@
+.ce_main{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999999999;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 70px;
+    background-color: beige;
+}
+
+#ce_name{
+    padding: 10px;
+    height: wrap-content;
+    width: match-parent;
+    margin:10px;
+    text-align: center;
+    background-color: bisque;
+    color: #434398;
+}
+#ce_button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    font-size: 30px;
+}
+#ce_button:hover{
+    background-color:grey;
+}
